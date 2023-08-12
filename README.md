@@ -101,7 +101,7 @@ node main.js //run the code
 var http = require('http');
 
 http.createServer(function (req, res) {
-    res.write('NODE JS SUNUCUSU OK');
+    res.write('NODE JS SERVER WORKING');
     res.end();
 
 }).listen(9000); 
@@ -125,7 +125,7 @@ http.createServer(function (req, res) {
 
 - Check server state from ubuntu cli
 ```
- curl -i http://localhost:9000
+ curl -i http://localhost:PORT
 ```
 
 
