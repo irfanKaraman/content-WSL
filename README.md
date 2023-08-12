@@ -35,7 +35,7 @@ activate and install wsl, ubuntu, vscode.
 
 # Linux Commands
 ```
-cd /mnt/c/users/irfan/documents  //access host windows from linux cli
+cd /mnt/c/users/irfan/documents  #access host windows from linux cli
 touch test.txt //create file
 mkdir test //create folder
 sudo mv source_path target_path //move file/folders from source to target destination
