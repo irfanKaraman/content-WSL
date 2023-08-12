@@ -10,7 +10,8 @@ activate and install wsl, ubuntu, vscode.
   wsl --version
   wsl --update
   ```
-# Install Windows Terminal
+
+  # Install Windows Terminal
 - Windows Store
 - Also you can install from Github > https://github.com/microsoft/terminal/releases
 
@@ -42,25 +43,39 @@ sudo apt update //update linux
 sudo apt install APP //install app-package on linux
 ```
 
-# Install nodeJS
-https://github.com/nodesource/distributions#debinstall
+# Install nodeJS on Linux
 ```
   curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - &&\
   sudo apt-get install -y nodejs
 ```
+- Check here for updates > https://github.com/nodesource/distributions#debinstall
 
-
+# main.nodeJS Codes
 ```
-#Oh-my-zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-brew install font-hack-nerd-font
+var http = require('http');
+
+http.createServer(function (req, res) {
+    res.write('NODE JS SUNUCUSU OK');
+    res.end();
+
+}).listen(9000); 
 ```
 
-## Other Tools
-
-
-
-### Re-read config
+# index.nodeJS Codes
 ```
-:source-file ~/.tmux.conf
+var http = require('http');
+var url = require('url');
+
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/html'});
+  var q = url.parse(req.url, true).query;
+  var txt = q.year + " " + q.month;
+  res.end(txt);
+
+}).listen(8000);
+```
+
+- Check server state from linux cli
+ ```
+ curl -i http://localhost:9000
 ```
