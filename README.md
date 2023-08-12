@@ -38,10 +38,10 @@ Activate and install wsl. Configure ubuntu, vscode, git, nodejs.
 ```
 
 
-# Linux Commands
+# Linux/Ubuntu Commands
 
 ```
-cd /mnt/c/users/irfan/documents  #access host windows from linux cli
+cd /mnt/c/users/irfan/documents  //access host windows from linux cli
 touch test.txt //create file
 mkdir test //create folder
 sudo mv source_path target_path //move file/folders from source to target destination
@@ -50,7 +50,34 @@ sudo apt install APP //install app-package on linux
 ```
 
 
-# Install nodeJS on Linux
+# vsCode Download Link
+> https://code.visualstudio.com/
+
+
+# Git Bash Download Link
+> https://gitforwindows.org/
+
+
+# Git Commands
+
+```
+  git init //initialize git
+  sudo apt install gitsome //install gitsome for autocomplete commands
+  git config --global user.email xyz@xyz.com
+  git config --global user.name Jane Doe
+  git clone https://USERNAME:TOKEN@github.com/USERNAME/REPONAME.git
+  git remote set-url origin https://USERNAME:TOKEN@github.com/USERNAME/REPONAME.git //Should be on git repo folder
+  git add . //add all files
+  git add README.txt //add specific file
+  git commit -m "commit" //commit
+  git push -u origin master //push
+  git status //status check
+  git fetch
+  git pull origin
+```
+
+
+# Install nodeJS on Ubuntu
 
 ```
   curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - &&\
@@ -59,7 +86,16 @@ sudo apt install APP //install app-package on linux
 - Check here for updates > https://github.com/nodesource/distributions#debinstall
 
 
-# main.nodeJS Codes
+# nodeJS Commands for Ubuntu
+
+```
+npm init -y  //initialize
+npm install express 
+node main.js //run the code
+```
+
+
+# main.nodeJS 
 
 ```
 var http = require('http');
@@ -72,7 +108,7 @@ http.createServer(function (req, res) {
 ```
 
 
-# index.nodeJS Codes
+# index.nodeJS 
 
 ```
 var http = require('http');
@@ -87,7 +123,12 @@ http.createServer(function (req, res) {
 }).listen(8000);
 ```
 
-- Check server state from linux cli
- ```
+- Check server state from ubuntu cli
+```
  curl -i http://localhost:9000
 ```
+
+
+
+
+
