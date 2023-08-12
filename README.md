@@ -1,5 +1,5 @@
-# content-wsl
-Activate and install wsl. Configure ubuntu, vscode, git, nodejs.
+# 01 - Tech Talks | DevOps Series
+> Ubuntu/Linux & Git & VScode & NodeJS Installation and Configuration on WSL2 with Windows Terminal (Windows 11 OS)
 
 
 # Activate & Install WSL
