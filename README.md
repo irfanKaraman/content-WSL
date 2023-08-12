@@ -1,5 +1,5 @@
 # content-wsl
-activate and install wsl, ubuntu, vscode.
+Activate and install wsl. Configure ubuntu, vscode, git, nodejs.
 
 
 # Activate & Install WSL
@@ -11,17 +11,21 @@ activate and install wsl, ubuntu, vscode.
   wsl --update
   ```
 
-  # Install Windows Terminal
+
+# Install Windows Terminal
 - Windows Store
 - Also you can install from Github > https://github.com/microsoft/terminal/releases
+
 
 # Install Linux on WSL
 - Windows Store
 - Also you can install from Windows Terminal
+
 ```
   wsl --list --online
   wsl --install -d ubuntu-20.04
 ```
+
 
 # WSL Commands
 
@@ -33,7 +37,9 @@ activate and install wsl, ubuntu, vscode.
   wsl --update
 ```
 
+
 # Linux Commands
+
 ```
 cd /mnt/c/users/irfan/documents  #access host windows from linux cli
 touch test.txt //create file
@@ -43,14 +49,18 @@ sudo apt update //update linux
 sudo apt install APP //install app-package on linux
 ```
 
+
 # Install nodeJS on Linux
+
 ```
   curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - &&\
   sudo apt-get install -y nodejs
 ```
 - Check here for updates > https://github.com/nodesource/distributions#debinstall
 
+
 # main.nodeJS Codes
+
 ```
 var http = require('http');
 
@@ -61,7 +71,9 @@ http.createServer(function (req, res) {
 }).listen(9000); 
 ```
 
+
 # index.nodeJS Codes
+
 ```
 var http = require('http');
 var url = require('url');
