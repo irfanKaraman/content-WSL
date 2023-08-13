@@ -36,7 +36,9 @@
   wsl -l -v
   wsl --list --all
   wsl --update
-  wsl --unregister DISTRIBUTIONNAME //uninstall the machine (Ubuntu-20.04, Kali etc)
+  wsl --unregister <DISTRIBUTION-NAME> //uninstall the machine (Ubuntu-20.04, Kali etc)
+  wsl --export <DISTRIBUTION-NAME> <filename.tar> //backup
+  wsl --import <DISTRIBUTION-NAME> <install location=""> <filename> </filename></install></DISTRIBUTION-NAME></filename.tar></DISTRIBUTION-NAME> //restore
 ```
 
 
