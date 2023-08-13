@@ -23,7 +23,7 @@
 
 ```
   wsl --list --online
-  wsl --install -d ubuntu-20.04
+  wsl --install -d Ubuntu-20.04
 ```
 
 
@@ -34,7 +34,9 @@
   wsl --shutdown //turn of all machines
   wsl -t Ubuntu-20.04 //turn of only specified machine
   wsl -l -v
+  wsl --list --all
   wsl --update
+  wsl --unregister DISTRIBUTIONNAME //uninstall the machine (Ubuntu-20.04, Kali etc)
 ```
 
 
