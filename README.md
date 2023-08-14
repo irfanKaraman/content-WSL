@@ -33,12 +33,18 @@
   wsl --update
   wsl --shutdown //turn of all machines
   wsl -t Ubuntu-20.04 //turn of only specified machine
+  wsl // boot up default * distro
+  wsl -d <DISTRIBUTION-NAME> //boot up specified distro
   wsl -l -v
   wsl --list --all
   wsl --update
-  wsl --unregister <DISTRIBUTION-NAME> //uninstall the machine (Ubuntu-20.04, Kali etc)
+  wsl --unregister <DISTRIBUTION-NAME> //uninstall the machine
   wsl --export <DISTRIBUTION-NAME> <filename.tar> //backup
   wsl --import <DISTRIBUTION-NAME> <install location=""> <filename> </filename></install></DISTRIBUTION-NAME></filename.tar></DISTRIBUTION-NAME> //restore
+  > powershell commands for restart distros
+    Get-Service LxssManager | Restart-Service
+    net stop LxssManager
+    net start LxssManager  
 ```
 
 
@@ -54,7 +60,7 @@ sudo apt install APP //install app-package on linux
 ```
 
 
-# vsCode Download Link
+# VSCode Download Link
 > https://code.visualstudio.com/
 
 
