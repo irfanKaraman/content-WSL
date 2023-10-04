@@ -57,6 +57,8 @@ mkdir test //create folder
 sudo mv source_path target_path //move file/folders from source to target destination
 sudo apt update //update linux
 sudo apt install APP //install app-package on linux
+exec zsh //reload zsh shell
+. ~/.bashrc //reload bash
 ```
 
 
